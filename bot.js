@@ -283,7 +283,7 @@ client.on('message', message => {
 ❖ $resume ⇏ For the Molecule of Egyption after being temporarily incapacitated
 ❖ $stop ⇏ To extract the pot from the room
 ❖ $np ⇏ To find out the song that is running
-❖ /queue ⇏ To learn the operating system
+❖ $queue ⇏ To learn the operating system
 `);
   message.author.send({embed});
     }
