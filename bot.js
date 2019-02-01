@@ -24,7 +24,7 @@ client.on('ready', () => {
      console.log(`ON ${client.guilds.size} Servers '     Script By : Dark7oveRR ' `);
    console.log(`----------------`);
  console.log(`Logged in as ${client.user.tag}!`);
- client.user.setGame(`$p`,"https://www.twitch.tv/dark7overr")
+ client.user.setGame(`$p`)
  client.user.setStatus("dnd")
 });
 const prefix = "$"
@@ -265,4 +265,4 @@ client.on('message', message => {
 
 
    
-client.login("NTQwODcyMTA3NTQ3MTY0Njgy.DzXN7w.9KCkOkYn-CbR7ikqyuBOGq7qZYY");
+client.login(process.env.BOT_TOKEN);
