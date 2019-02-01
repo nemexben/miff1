@@ -261,7 +261,35 @@ client.on('message', message => {
   }
 })
 
+/////////////////////////////////////////////////////////////////////////////
 
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help") {
+         message.channel.send('**Special orders sent✔️ :mailbox_with_mail:**');
+  const embed = new Discord.RichEmbed()
+         
+    
+         
+
+      .setColor("RANDOM")
+.setDescription(`
+╔[❖════════════❖]╗
+  Music Commands
+╚[❖════════════❖]╝
+❖ $p ⇏ To play a song with a clip or bass
+❖ $skip ⇏ To play the song
+❖ $pause ⇏ Pause the song
+❖ $resume ⇏ For the Molecule of Egyption after being temporarily incapacitated
+❖ $stop ⇏ To extract the pot from the room
+❖ $np ⇏ To find out the song that is running
+❖ /queue ⇏ To learn the operating system
+`);
+  message.author.send({embed});
+    }
+});
+
+/////////////////////////////////////////////////////////////////////////////
 
 
    
